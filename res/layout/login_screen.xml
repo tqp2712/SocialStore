@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/background_color">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:background="@android:color/transparent">
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login"
+            android:textColor="@color/blue"
+            android:textStyle="bold"
+            android:textSize="17sp" />
+    </LinearLayout>
+	<View 
+	    android:layout_height="3dp"
+	    android:layout_width="match_parent"
+	    android:background="@color/blue"/>
+    <TableRow android:gravity="center_horizontal">
+        <TextView
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_margin="10dp"
+	        android:id="@+id/txt_error"
+	        android:textSize="18sp"
+	        android:lines="2"
+	        android:paddingLeft="8dp"
+	        android:textColor="@color/red"
+	        android:visibility="gone"/>
+    </TableRow>
+    <TableRow>
+        <EditText
+            style="@style/input_field"
+	        android:id="@+id/txt_username"
+	        android:hint="@string/username" />
+    </TableRow>
+    <TableRow>
+        <EditText
+            style="@style/input_field"
+	        android:id="@+id/txt_password"
+	       	android:inputType="textPassword"
+	        android:hint="@string/password" />
+    </TableRow>
+    <TableRow android:gravity="center" android:padding="10dp">
+        <Button
+	        android:id="@+id/btn_save"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:padding="5dp"
+	        android:text="@string/login"/>
+	    <Button
+	        android:id="@+id/btn_cancel"
+	        android:padding="5dp"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/cancel"/>
+    </TableRow>
+</TableLayout>
