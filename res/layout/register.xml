@@ -19,6 +19,13 @@
     <TableRow>
         <EditText
             style="@style/input_field"
+	        android:id="@+id/edt_fullname"
+	       	android:inputType="textPassword"
+	        android:hint="@string/fullname" />
+    </TableRow>
+    <TableRow>
+        <EditText
+            style="@style/input_field"
 	        android:id="@+id/edt_username"
 	        android:hint="@string/username" />
     </TableRow>
@@ -29,12 +36,26 @@
 	       	android:inputType="textPassword"
 	        android:hint="@string/password" />
     </TableRow>
+    <TableRow>
+        <EditText
+            style="@style/input_field"
+	        android:id="@+id/edt_confirm_password"
+	       	android:inputType="textPassword"
+	        android:hint="@string/confirm_password" />
+    </TableRow>
+    <TableRow>
+        <EditText
+            style="@style/input_field"
+	        android:id="@+id/edt_email"
+	       	android:inputType="textEmailAddress"
+	        android:hint="@string/email" />
+    </TableRow>
     <LinearLayout android:gravity="center" android:padding="10dp">
         <Button style="@style/button_style"
 	        android:id="@+id/btn_save"
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
 	        android:padding="5dp"
-	        android:text="@string/login" />
+	        android:text="@string/register" />
     </LinearLayout>
 </TableLayout>

@@ -5,8 +5,12 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
 	<string name="login">Login</string>
+	<string name="register">Register</string>
 	<string name="username">Username</string>
 	<string name="password">Password</string>
+	<string name="confirm_password">Confirm password</string>
+	<string name="fullname">Fullname</string>
+	<string name="email">Email</string>
 	<string name="cancel">Cancel</string>
 	<string name="error_login_fail">Your username or password is incorrect, please try again</string>
 	<string name="error_login">Please input username and password</string>
